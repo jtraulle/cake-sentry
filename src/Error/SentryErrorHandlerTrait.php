@@ -13,16 +13,6 @@ trait SentryErrorHandlerTrait
 {
     use InstanceConfigTrait;
 
-    /**
-     * Generates a formatted error message with exception.
-     *
-     * @see \Cake\Error\BaseErrorHandler::_getMessage()
-     *
-     * @param Exception $exception subject
-     * @return string Formatted message
-     */
-    abstract protected function _getMessage(Exception $exception);
-
     /* @var Client */
     protected $client;
 
